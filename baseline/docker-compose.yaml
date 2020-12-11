@@ -1,16 +1,16 @@
 version: "3.1"
 
 services:
-  pingaccess:
-    image: pingidentity/pingaccess:${PING_IDENTITY_DEVOPS_TAG}
-    command: wait-for pingfederate:9031 -t 420 -- entrypoint.sh start-server
-    environment: 
-      - SERVER_PROFILE_URL=https://github.com/pingidentity/pingidentity-server-profiles.git
-      - SERVER_PROFILE_PATH=baseline/pingaccess
-    env_file:
+        # pingaccess:
+        # image: pingidentity/pingaccess:${PING_IDENTITY_DEVOPS_TAG}
+        # command: wait-for pingfederate:9031 -t 420 -- entrypoint.sh start-server
+        # environment: 
+        # - SERVER_PROFILE_URL=https://github.com/pingidentity/pingidentity-server-profiles.git
+        # - SERVER_PROFILE_PATH=baseline/pingaccess
+        # env_file:
       # Configuration file created when setup.sh (Getting-started project root directory) is first run to source
       # devops user/key details for evaluation licenses and for docker image/git tags
-      - ~/.pingidentity/devops
+      # - ~/.pingidentity/devops
     # Example: Examples below for mounting local directories for inbound server profile and persisting
     #          server build.  The local /opt/out directory must be empty when building new server
     #             /opt/out - Resulting server build
@@ -18,18 +18,21 @@ services:
     #volumes:
     #   - ${HOME}/projects/devops/volumes/full-stack.pingaccess:/opt/out
     #   - ${HOME}/projects/devops/pingidentity-server-profiles/baseline/pingaccess:/opt/in
-    ports:
-      - 443:443
-      - 9000:9000
-    networks:
-      - pingnet-dmz
+    # ports:
+    #  - 443:443
+    #  - 9000:9000
+    #networks:
+    #  - pingnet-dmz
 
   pingfederate:
-    image: pingidentity/pingfederate:${PING_IDENTITY_DEVOPS_TAG}
-    # command: wait-for pingdirectory:389 -t 300 -- entrypoint.sh start-server
+    image: pingidentity/pingfederate:2007-10.1.0
+    command: wait-for pingdirectory:389 -t 300 -- entrypoint.sh start-server
     environment:
-      - SERVER_PROFILE_URL=https://github.com/pingidentity/pingidentity-server-profiles.git
+      - SERVER_PROFILE_URL=https://github.com/izping/pingidentity-server-profiles.git
       - SERVER_PROFILE_PATH=baseline/pingfederate
+      - PING_IDENTITY_ACCEPT_EULA=YES
+      - PING_IDENTITY_DEVOPS_USER=itaizach@pingidentity.com
+      - PING_IDENTITY_DEVOPS_KEY=9037d3f9-a454-4d75-a2ab-4110f7af2fa5
     env_file:
       - ~/.pingidentity/devops
     #volumes:
@@ -43,10 +46,13 @@ services:
       - pingnet-internal
 
   pingdirectory:
-    image: pingidentity/pingdirectory:${PING_IDENTITY_DEVOPS_TAG}
+    image: pingidentity/pingdirectory:2007-alpine-8.1.0.0
     environment:
       - SERVER_PROFILE_URL=https://github.com/pingidentity/pingidentity-server-profiles.git
       - SERVER_PROFILE_PATH=baseline/pingdirectory
+      - PING_IDENTITY_ACCEPT_EULA=YES
+      - PING_IDENTITY_DEVOPS_USER=itaizach@pingidentity.com
+      - PING_IDENTITY_DEVOPS_KEY=9037d3f9-a454-4d75-a2ab-4110f7af2fa5
     env_file:
       - ~/.pingidentity/devops
     #volumes:
@@ -58,12 +64,12 @@ services:
     networks:
       - pingnet-internal
   
-  pingdataconsole:
-    image: pingidentity/pingdataconsole:${PING_IDENTITY_DEVOPS_TAG}
-    ports:
-      - 8443:8443
-    networks: 
-      - pingnet-internal
+        # pingdataconsole:
+        # image: pingidentity/pingdataconsole:${PING_IDENTITY_DEVOPS_TAG}
+        # ports:
+        # - 8443:8443
+        # networks: 
+        # - pingnet-internal
               
 networks:
     pingnet-internal:
