@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:config xmlns:con="http://www.sourceid.org/2004/05/config">
+    <con:item name="ApplicationDockEndpoint">https://desktop.pingone.com/cd-1221147710.pingidentity</con:item>
+    <con:item name="ProvisioningBaseUrl">https://scim.connect.pingidentity.com/prov-service</con:item>
+    <con:item name="KeyPairAlias">9h7pdm0h61yxojradpfm9ta7n</con:item>
+    <con:item name="ClientId">43684394-b6c3-42f4-8dd3-9c52fae2bc48</con:item>
+    <con:item name="AccountId">cade54a6-127d-475b-8f48-6c61562f40b2</con:item>
+    <con:item name="CompanyName">itaizach+afb@pingidentity.com</con:item>
+    <con:item name="Associated">true</con:item>
+</con:config>

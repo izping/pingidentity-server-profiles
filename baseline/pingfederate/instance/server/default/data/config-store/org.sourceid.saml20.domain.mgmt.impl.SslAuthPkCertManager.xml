@@ -3,4 +3,5 @@
     <con:map name="docker"/>
     <con:map name="https://httpbin.org"/>
     <con:map name="https://httpbin.org/anything"/>
+    <con:map name="http://pingone.com/cade54a6-127d-475b-8f48-6c61562f40b2"/>
 </con:config>
