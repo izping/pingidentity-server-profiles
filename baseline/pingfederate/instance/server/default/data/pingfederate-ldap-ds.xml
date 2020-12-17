@@ -5,10 +5,27 @@
         <ldap:principal>cn=pingfederate</ldap:principal>
         <ldap:use-ssl>false</ldap:use-ssl>
         <ldap:use-dns-srv-records>false</ldap:use-dns-srv-records>
-        <ldap:credentials>eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2Iiwia2lkIjoiRW1JY1UxOVdueSIsInZlcnNpb24iOiI5LjIuMS4xIn0..ZLVmgXJVySez9CFG-XpFjA.rSvFI6kQuVjdUVpRYZQfyg.YIs9McL1ZipQCkIuIWvnwQ</ldap:credentials>
+        <ldap:ad-referral>false</ldap:ad-referral>
+        <ldap:credentials>eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2Iiwia2lkIjoiRW1JY1UxOVdueSIsInZlcnNpb24iOiIxMC4xLjAuOCJ9..amcFEZl-hCpVycILoxPUbA.qvKo4pFhoDuA_onflD3Zxw.Lpv6mYI3eaBtkS1TYYUPCQ</ldap:credentials>
         <ldap:authenticationMeth>simple</ldap:authenticationMeth>
         <ldap:description>pingdirectory</ldap:description>
         <ldap:name>pingdirectory</ldap:name>
         <ldap:binaryAttributes/>
+        <ldap:ldapHostTagList/>
+    </ldap:ldap-source>
+    <ldap:ldap-source id="LDAP-6E7B49E27FC6F7E7FBEE0DA0CAC6B9E29923192D" maskAttributeValues="false" ldapType="ActiveDirectory" ldapTypeDesc="Active Directory" testOnBorrow="false" testOnReturn="false" createIfNecessary="true" minIdle="10" maxActive="100" maxWait="-1" timeBetweenEvictionRunsMillis="60000" readTimeoutMillis="3000" connTimeoutMillis="3000" verifyHost="true" dnsTtlMillis="60000" ldapDnsSrvPrefix="_ldap._tcp" ldapsDnsSrvPrefix="_ldaps._tcp">
+        <ldap:host>10.101.59.147</ldap:host>
+        <ldap:principal>CN=Administrator,CN=Users,DC=austinfinebread,DC=com</ldap:principal>
+        <ldap:use-ssl>false</ldap:use-ssl>
+        <ldap:use-dns-srv-records>false</ldap:use-dns-srv-records>
+        <ldap:ad-referral>false</ldap:ad-referral>
+        <ldap:credentials>eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2Iiwia2lkIjoiRW1JY1UxOVdueSIsInZlcnNpb24iOiIxMC4xLjAuOCJ9..WxI4rHSTGuqm9shycBICow.2FYerUFb1qSc1zKf7BKRUg.VUJmo_YTKNxcGs6gtH37Mg</ldap:credentials>
+        <ldap:authenticationMeth>simple</ldap:authenticationMeth>
+        <ldap:description>ABF Users</ldap:description>
+        <ldap:name>ABF Users</ldap:name>
+        <ldap:binaryAttributes/>
+        <ldap:ldapHostTagList>
+            <ldap:tagEntry host="10.101.59.147" tags=""/>
+        </ldap:ldapHostTagList>
     </ldap:ldap-source>
 </ldap:ldap-sources>

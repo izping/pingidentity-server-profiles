@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urn:AdapterConfiguration authnCtxClassRef="" isInheritAttributeSettings="false" isInheritAttributeMapping="false" maskOgnlValues="false" isInheritExtendedContractAttributes="false" name="PingID AFB" xmlns:urn="urn:sourceid.org:saml2:adapter:conf">
+    <urn:Fields>
+        <urn:Field name="PingID Properties">I0F1dG8tR2VuZXJhdGVkIGZyb20gUGluZ09uZSwgZG93bmxvYWRlZCBieSBpZD1bODk0MTcwXSBlbWFpbD1baXRhaXphY2grYWZiQHBpbmdpZGVudGl0eS5jb21dCiNUaHUgRGVjIDE3IDEzOjA1OjM1IE1TVCAyMDIwCnVzZV9iYXNlNjRfa2V5PXg1RFRtT3E1c28zcEpvdEhMdTBXdnlkWWlGMkxXTEN0SnVGY1huenNjVXM9CnVzZV9zaWduYXR1cmU9dHJ1ZQp0b2tlbj03ZjJjYmE1ZDY1ZGY0ZTQ5YTQzNTc3YTg1ODAzZTk5MQppZHBfdXJsPWh0dHBzOi8vaWRweG55bDNtLnBpbmdpZGVudGl0eS5jb20vcGluZ2lkCm9yZ19hbGlhcz1jYWRlNTRhNi0xMjdkLTQ3NWItOGY0OC02YzYxNTYyZjQwYjIKYWRtaW5fdXJsPWh0dHBzOi8vaWRweG55bDNtLnBpbmdpZGVudGl0eS5jb20vcGluZ2lkCmF1dGhlbnRpY2F0b3JfdXJsPWh0dHBzOi8vYXV0aGVudGljYXRvci5waW5nb25lLmNvbS9waW5naWQvcHBtCg==</urn:Field>
+        <urn:Field name="LDAP Data source"/>
+        <urn:Field name="Query Directory">false</urn:Field>
+        <urn:Field name="Base Domain"/>
+        <urn:Field name="Filter"/>
+        <urn:Field name="LDAP Search Scope">3</urn:Field>
+        <urn:Field name="fname attribute"/>
+        <urn:Field name="lname attribute"/>
+        <urn:Field name="email attribute"/>
+        <urn:Field name="group attribute"/>
+        <urn:Field name="phone attribute"/>
+        <urn:Field name="YubiKey attribute"/>
+        <urn:Field name="Secondary email attribute"/>
+        <urn:Field name="Voice number attribute"/>
+        <urn:Field name="State attribute"/>
+        <urn:Field name="PingID Heartbeat Timeout"/>
+        <urn:Field name="Authentication During Errors">REJECT</urn:Field>
+        <urn:Field name="Users without a paired device">block</urn:Field>
+        <urn:Field name="LDAP Data Source For Devices"/>
+        <urn:Field name="Create entry for devices"/>
+        <urn:Field name="Encryption Key For Devices"/>
+        <urn:Field name="Distinguished Name Pattern"/>
+        <urn:Field name="HTML Template">pingid.offline.auth.login.template.html</urn:Field>
+        <urn:Field name="Cookie Duration">1</urn:Field>
+        <urn:Field name="PingID Properties File Name">pingid.properties.1</urn:Field>
+        <urn:Field name="Refresh UserId Cookie">false</urn:Field>
+        <urn:Field name="Require PingID Registration">false</urn:Field>
+    </urn:Fields>
+    <urn:AdvancedFields>
+        <urn:Field name="LDAP Data source"/>
+        <urn:Field name="Query Directory">false</urn:Field>
+        <urn:Field name="Base Domain"/>
+        <urn:Field name="Filter"/>
+        <urn:Field name="LDAP Search Scope">3</urn:Field>
+        <urn:Field name="fname attribute"/>
+        <urn:Field name="lname attribute"/>
+        <urn:Field name="email attribute"/>
+        <urn:Field name="group attribute"/>
+        <urn:Field name="phone attribute"/>
+        <urn:Field name="YubiKey attribute"/>
+        <urn:Field name="Secondary email attribute"/>
+        <urn:Field name="Voice number attribute"/>
+        <urn:Field name="State attribute"/>
+        <urn:Field name="PingID Heartbeat Timeout"/>
+        <urn:Field name="Authentication During Errors">REJECT</urn:Field>
+        <urn:Field name="Users without a paired device">block</urn:Field>
+        <urn:Field name="LDAP Data Source For Devices"/>
+        <urn:Field name="Create entry for devices"/>
+        <urn:Field name="Encryption Key For Devices"/>
+        <urn:Field name="Distinguished Name Pattern"/>
+        <urn:Field name="HTML Template">pingid.offline.auth.login.template.html</urn:Field>
+        <urn:Field name="Cookie Duration">1</urn:Field>
+        <urn:Field name="PingID Properties File Name">pingid.properties.1</urn:Field>
+        <urn:Field name="Refresh UserId Cookie">false</urn:Field>
+        <urn:Field name="Require PingID Registration">false</urn:Field>
+    </urn:AdvancedFields>
+    <urn:Tables/>
+    <urn:ExtendedContractAttributes>
+        <urn:AttributeName>fname</urn:AttributeName>
+        <urn:AttributeName>lname</urn:AttributeName>
+        <urn:AttributeName>phone</urn:AttributeName>
+        <urn:AttributeName>objectGUID</urn:AttributeName>
+        <urn:AttributeName>memberOf</urn:AttributeName>
+        <urn:AttributeName>email</urn:AttributeName>
+        <urn:AttributeName>userPrincipalName</urn:AttributeName>
+    </urn:ExtendedContractAttributes>
+    <urn:UniqueKeyField>pingid.policy.action</urn:UniqueKeyField>
+    <urn:UniqueKeyField>pingid_state</urn:UniqueKeyField>
+    <urn:UniqueKeyField>subject</urn:UniqueKeyField>
+    <urn:AttributeMapping>
+        <urn1:AttributeMap Name="org.sourceid.saml20.adapter.idp.authn.authnCtx" Type="Adapter" Value="org.sourceid.saml20.adapter.idp.authn.authnCtx" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
+        <urn1:AttributeMap Name="fname" Type="Adapter" Value="fname" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
+        <urn1:AttributeMap Name="pingid_state" Type="Adapter" Value="pingid_state" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
+        <urn1:AttributeMap Name="lname" Type="Adapter" Value="lname" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
+        <urn1:AttributeMap Name="pingid.policy.action" Type="Adapter" Value="pingid.policy.action" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
+        <urn1:AttributeMap Name="phone" Type="Adapter" Value="phone" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
+        <urn1:AttributeMap Name="subject" Type="Adapter" Value="subject" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
+        <urn1:AttributeMap Name="objectGUID" Type="Adapter" Value="objectGUID" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
+        <urn1:AttributeMap Name="memberOf" Type="Adapter" Value="memberOf" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
+        <urn1:AttributeMap Name="email" Type="Adapter" Value="email" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
+        <urn1:AttributeMap Name="userPrincipalName" Type="Adapter" Value="userPrincipalName" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
+        <urn1:TokenAuthorizationIssuanceCriteria xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
+    </urn:AttributeMapping>
+</urn:AdapterConfiguration>

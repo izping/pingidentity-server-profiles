@@ -48,7 +48,7 @@ services:
   pingdirectory:
     image: pingidentity/pingdirectory:2007-alpine-8.1.0.0
     environment:
-      - SERVER_PROFILE_URL=https://github.com/pingidentity/pingidentity-server-profiles.git
+      - SERVER_PROFILE_URL=https://github.com/izping/pingidentity-server-profiles.git
       - SERVER_PROFILE_PATH=baseline/pingdirectory
       - PING_IDENTITY_ACCEPT_EULA=YES
       - PING_IDENTITY_DEVOPS_USER=itaizach@pingidentity.com
