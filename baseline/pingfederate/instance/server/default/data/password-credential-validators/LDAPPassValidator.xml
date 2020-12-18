@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urn:PluginConfiguration isInheritExtendedContractAttributes="false" name="LDAP Password validator" xmlns:urn="urn:sourceid.org:saml2:adapter:conf">
+    <urn:Fields>
+        <urn:Field name="LDAP Datastore">LDAP-6E7B49E27FC6F7E7FBEE0DA0CAC6B9E29923192D</urn:Field>
+        <urn:Field name="Search Base">DC=austinfinebread,DC=com</urn:Field>
+        <urn:Field name="Search Filter">sAMAccountName=${username}</urn:Field>
+        <urn:Field name="Scope of Search">Subtree</urn:Field>
+        <urn:Field name="Case-Sensitive Matching">true</urn:Field>
+        <urn:Field name="Display Name Attribute">displayName</urn:Field>
+        <urn:Field name="Mail Attribute">mail</urn:Field>
+        <urn:Field name="SMS Attribute"/>
+        <urn:Field name="PingID Username Attribute"/>
+        <urn:Field name="Mail Search Filter"/>
+        <urn:Field name="Username Attribute"/>
+        <urn:Field name="Trim Username Spaces For Search">true</urn:Field>
+        <urn:Field name="Mail Verified Attribute"/>
+        <urn:Field name="Enable PingDirectory Detailed Password Policy Requirement Messaging">true</urn:Field>
+    </urn:Fields>
+    <urn:AdvancedFields>
+        <urn:Field name="Display Name Attribute">displayName</urn:Field>
+        <urn:Field name="Mail Attribute">mail</urn:Field>
+        <urn:Field name="SMS Attribute"/>
+        <urn:Field name="PingID Username Attribute"/>
+        <urn:Field name="Mail Search Filter"/>
+        <urn:Field name="Username Attribute"/>
+        <urn:Field name="Trim Username Spaces For Search">true</urn:Field>
+        <urn:Field name="Mail Verified Attribute"/>
+        <urn:Field name="Enable PingDirectory Detailed Password Policy Requirement Messaging">true</urn:Field>
+    </urn:AdvancedFields>
+    <urn:Tables>
+        <urn:Table name="Authentication Error Overrides"/>
+    </urn:Tables>
+    <urn:ExtendedContractAttributes>
+        <urn:AttributeName>objectGUID</urn:AttributeName>
+        <urn:AttributeName>sn</urn:AttributeName>
+        <urn:AttributeName>memberOf</urn:AttributeName>
+        <urn:AttributeName>userPrincipalName</urn:AttributeName>
+    </urn:ExtendedContractAttributes>
+</urn:PluginConfiguration>
