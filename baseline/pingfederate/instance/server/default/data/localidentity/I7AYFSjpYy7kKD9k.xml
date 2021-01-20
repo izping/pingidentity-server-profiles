@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<loc:localIdentity profileId="I7AYFSjpYy7kKD9k" profileName="LIP-Passwordless" contractId="K0MRB925mIac85Lr" profileEnabled="false" registrationEnabled="false" xmlns:loc="http://pingidentity.com/2017/07/localIdentity">
+    <loc:auth-sources>
+        <loc:auth-source id="2D6PQfzbdBjqnybi" name="FIDO">
+            <loc:update-policy attributeStorageEnabled="false" retainAttributes="false" updateAttributes="false" updateInterval="0.0"/>
+        </loc:auth-source>
+        <loc:auth-source id="NVZzz4JTa6m6bHd1" name="Security Key">
+            <loc:update-policy attributeStorageEnabled="false" retainAttributes="false" updateAttributes="false" updateInterval="0.0"/>
+        </loc:auth-source>
+    </loc:auth-sources>
+</loc:localIdentity>

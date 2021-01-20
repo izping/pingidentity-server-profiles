@@ -4,6 +4,9 @@
         <con:item name="HTMLFormPD">com.pingidentity.adapters.htmlform.idp.HtmlFormIdpAuthnAdapter</con:item>
         <con:item name="PingIDAFB">com.pingidentity.adapters.pingid.PingIDAdapter</con:item>
         <con:item name="HTMLFormAadaptor">com.pingidentity.adapters.htmlform.idp.HtmlFormIdpAuthnAdapter</con:item>
+        <con:item name="HTMFormPasswdless">com.pingidentity.adapters.htmlform.idp.HtmlFormIdpAuthnAdapter</con:item>
     </con:map>
-    <con:map name="IdpAdapterInstanceParents"/>
+    <con:map name="IdpAdapterInstanceParents">
+        <con:item name="HTMFormPasswdless">HTMLFormAadaptor</con:item>
+    </con:map>
 </con:config>
