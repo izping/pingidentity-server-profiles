@@ -1,3 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <mu:metadataUrls xmlns:mu="http://pingidentity.com/2015/01/metadata-url">
+    <mu:metadataUrlCertType>
+        <mu:id>LNS7C5ebGyrwp2RH6zCXQczXm</mu:id>
+        <mu:name>IAMShwoCase</mu:name>
+        <mu:metadataUrl>https://sptest.iamshowcase.com/testsp_metadata.xml</mu:metadataUrl>
+        <mu:certAlias xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+        <mu:validateSignature>true</mu:validateSignature>
+    </mu:metadataUrlCertType>
 </mu:metadataUrls>
