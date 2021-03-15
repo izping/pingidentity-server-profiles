@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<c2c:c2cContract id="6ekqG3hJeVPvn8X3" name="SimpleAFBContract" xmlns:c2c="http://pingidentity.com/2014/10/c2cContracts">
+    <c2c:extendedAttributes>
+        <c2c:attr name="Group"/>
+        <c2c:attr name="fname"/>
+        <c2c:attr name="lname"/>
+    </c2c:extendedAttributes>
+</c2c:c2cContract>

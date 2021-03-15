@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<pingOneConnectionsConfig>
+    <connections>
+        <active>true</active>
+        <creationDate>2021-03-12T19:22:26.436Z</creationDate>
+        <credentialId>8107064c-cbd3-4d15-be62-51f0de867060</credentialId>
+        <description>Risk Demo - Created for Itai and Dana.
+For PM use only.</description>
+        <encryptedCredential>eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2Iiwia2lkIjoiRW1JY1UxOVdueSIsInZlcnNpb24iOiIxMC4yLjAuMTMifQ..MDoUu3g9E_XNYXw6oGkXqQ.e_43hvFFyNvjLLA8zAAF2xEHemGhiP2Nov7T9M6HH6GfFPmrdxGqamIcQSfgzn3QryqAZ1Uvb4Wk4npflTWwo33DMIdp-4vfB_B1vWahGH_pvhPjOdDBPdR6m5EPFsyR3YxDsXynWvRuA9s3rYOPKDzR64W8WeEczR-XcFmln9tDbnRLIYl5mTcVRCFSctg7lY9DOMU6j2kma3MioQJwcI8nHDYiAG0zOMLqS4HgXo51FQlJm1ZtfDHLA0HkcUBTLDEZLmmieOzqaALvzJNZevy8DvRuUtLXbSxzqxRjQGI_oII20KXvaeIL_ZsxjnGjfougUiagevY7yRebKQRN7KnSWkiI1BuALEovWlTJAa8xQbGgBAAtiEgTfTaRJEHri1NNQzeNX4H700shy2Mq0Ta57g1jnzMCzWyXLzy5u08s3EIKqeIwWJYyIqID5J8mEWM5WU-OKRehuKcGVCjESAYEv4Qni06DDXLXuYHGfhhKOT5n9uAaHnKOhFQh-KEelVJzAzGTQl235ovUdcxmUcfX_DjfcWyMIcojXuDpoQAtuV2HxRHLbfV9CPMDpFCJrpb5mmAO5M2LTeg1svcI5928tGmJHxIIshfKRRfDIaCg3RagLMyUHJHdxsrqiDlq03BE2-ZvhujzuexoFxAIaFZJMiAqT0B-hht8jUHbFmDAWbJNWSQyr_0SpOf1w_X0uA3guYPb2PAs4EAg2vG_JvbNeth9AsrCl4M6dtLUW4-ug7tafz7UrjklY3V3x6MWNLkb1xXyaYnkUsKqA1O4GRm0V3oBzpbiRZkZepnTtlBherF_0lz96x1n_mvEkXcEfACu0r6irl-y3LAw1qKNjWUyW99bbery4WFAKJbyWj4UTwc2O_Jzef0L0SXaL-VsGRxCj9oV9rlx4U4hPgQyEHQWAqUMRlblDoQGzPyiTsIN4nMxy2-CQp6Rfy3OH2yadsxOvY4TSdqio1Wds_xIz9HUBPvR70V0thT-Td2RMLWaRGjZRebargHwq2C6k2sMAQJih9_kdU--F97_c6PKD8HB3z5b7GETldCuwjyuyTsBc-y0hf6rJXTAGizY5nt7Nx-rVADSH0RWJz3SQf_C9KJXJ0Pi8tAiE2ga-lWwJN7GY3zaEGWnrr7dwpXKxbc41oiytjsAFnR4tT40TEviB3xNNxnokh9o8YXtDhMHCcPZQk_Wgj7vCWpsO5HSgWrlRkMkNBBn4uegS5DfTOhuqZ6iLCcRFPz8TO77rCfyjMeMQCWxV9fqcUdv01HEYEcHVjcY34Bbj8xQYRT0YmnFHceQzQaJDkGF_5oYZz5sfpH3HxET-w8OkTyqS5Y-ZUBIxCa0FBeeE1Rvpy9PtEreiZy5IpTq62FVW6gZS8p5h96pNmAnLbqaqtoPXVIlfcye487GJI679S2znAT5im0kEVvfMSS9y20WTYZOtBj7nb5X37yo2_3g0q_7zYlOhqrRYiN5QeHn6wa4kUbef0UxpreP936g0iMRuG1AcvRWcARNs9OPbacZs6KZiGw9g0qXyUqln__6RmzG9qJO_5hKF6NciAyh8lHZBGI5JVtpyor34Q3vrXq4j7vFkeN5GDW52kr9P5OV3c5JuO_IEl57V2vNpLOVUITAMj_8GEFVSt_kqYhPjbmgGG3uIq0xbklR.nLBqGgzkRfJ9Zd-CBmqCEA</encryptedCredential>
+        <environmentId>a4633023-a3bf-4535-a505-d364d15905e3</environmentId>
+        <id>G59KqJ0IMCBUXT4vs53sYi</id>
+        <name>internal_riskdemo2_1539521870</name>
+        <organizationName>internal_riskdemo2riskdemo2_1539521870</organizationName>
+        <pingOneAuthenticationApiEndpoint>https://auth.pingone.com</pingOneAuthenticationApiEndpoint>
+        <pingOneConnectionId>d79b2188-a953-41e6-b3ef-b90e821724ce</pingOneConnectionId>
+        <pingOneManagementApiEndpoint>https://api.pingone.com</pingOneManagementApiEndpoint>
+        <region>North America</region>
+    </connections>
+</pingOneConnectionsConfig>

@@ -5,6 +5,8 @@
         <con:item name="PingIDAFB">com.pingidentity.adapters.pingid.PingIDAdapter</con:item>
         <con:item name="HTMLFormAadaptor">com.pingidentity.adapters.htmlform.idp.HtmlFormIdpAuthnAdapter</con:item>
         <con:item name="HTMFormPasswdless">com.pingidentity.adapters.htmlform.idp.HtmlFormIdpAuthnAdapter</con:item>
+        <con:item name="IdentifierFirst">com.pingidentity.adapters.identifierfirst.idp.IdentifierFirstAdapter</con:item>
+        <con:item name="Risk2DemoAdaptor">com.pingidentity.adapters.pingone.risk.PingOneRiskManagementIdpAdapter</con:item>
     </con:map>
     <con:map name="IdpAdapterInstanceParents">
         <con:item name="HTMFormPasswdless">HTMLFormAadaptor</con:item>

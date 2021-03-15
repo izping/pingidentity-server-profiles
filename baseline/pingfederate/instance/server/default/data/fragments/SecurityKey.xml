@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urn:PolicyFragment id="SecurityKey" name="Security Key" inputContractId="W2Lh3CCgY1KO1gR3" outputContractId="K0MRB925mIac85Lr" lastModifiedMillis="1615820342502" xmlns:urn="urn:pingidentity.com:pf:policy:fragment">
+    <urn:policy context="">
+        <urn:AstAction xsi:type="urn:AuthnSourceActionType" xmlns:urn="urn:pingidentity.com:pf:authn-selection" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <urn:AuthnSourceKey type="ADAPTER">PingIDAFB</urn:AuthnSourceKey>
+            <urn:fallbackToSuccess>true</urn:fallbackToSuccess>
+            <urn:userIdAuthenticated>false</urn:userIdAuthenticated>
+        </urn:AstAction>
+        <urn1:AstChild context="Fail" xmlns:urn1="urn:pingidentity.com:pf:authn-selection">
+            <urn:AstAction noOpType="DONE" xsi:type="urn:NoOpActionType" xmlns:urn="urn:pingidentity.com:pf:authn-selection" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+        </urn1:AstChild>
+        <urn1:AstChild context="Success" xmlns:urn1="urn:pingidentity.com:pf:authn-selection">
+            <urn:AstAction lipId="I7AYFSjpYy7kKD9k" xsi:type="urn:LocalIdentityMappingActionType" xmlns:urn="urn:pingidentity.com:pf:authn-selection" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <urn:InboundAttributeMapping/>
+                <urn:OutboundAttributeMapping>
+                    <urn2:AttributeMap Name="telephoneNumber" Type="Adapter" AttributeSourceId="PingIDAFB" Value="phone" xmlns:urn2="urn:sourceid.org:saml2:metadata-extension:v2"/>
+                    <urn2:AttributeMap Name="mail" Type="Adapter" AttributeSourceId="PingIDAFB" Value="email" xmlns:urn2="urn:sourceid.org:saml2:metadata-extension:v2"/>
+                    <urn2:AttributeMap Name="subject" Type="Adapter" AttributeSourceId="PingIDAFB" Value="subject" xmlns:urn2="urn:sourceid.org:saml2:metadata-extension:v2"/>
+                    <urn2:AttributeMap Name="givenName" Type="Adapter" AttributeSourceId="PingIDAFB" Value="fname" xmlns:urn2="urn:sourceid.org:saml2:metadata-extension:v2"/>
+                    <urn2:AttributeMap Name="objectGUID" Type="Adapter" AttributeSourceId="PingIDAFB" Value="objectGUID" xmlns:urn2="urn:sourceid.org:saml2:metadata-extension:v2"/>
+                    <urn2:AttributeMap Name="memberOf" Type="Adapter" AttributeSourceId="PingIDAFB" Value="memberOf" xmlns:urn2="urn:sourceid.org:saml2:metadata-extension:v2"/>
+                    <urn2:AttributeMap Name="sn" Type="Adapter" AttributeSourceId="PingIDAFB" Value="lname" xmlns:urn2="urn:sourceid.org:saml2:metadata-extension:v2"/>
+                    <urn2:AttributeMap Name="userPrincipalName" Type="Adapter" AttributeSourceId="PingIDAFB" Value="userPrincipalName" xmlns:urn2="urn:sourceid.org:saml2:metadata-extension:v2"/>
+                    <urn2:TokenAuthorizationIssuanceCriteria xmlns:urn2="urn:sourceid.org:saml2:metadata-extension:v2"/>
+                </urn:OutboundAttributeMapping>
+            </urn:AstAction>
+        </urn1:AstChild>
+    </urn:policy>
+</urn:PolicyFragment>

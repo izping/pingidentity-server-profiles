@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urn:PolicyFragment id="xhJ01NWJ0JhSmoUP" name="IdentifierFirst+Risk" inputContractId="W2Lh3CCgY1KO1gR3" outputContractId="K0MRB925mIac85Lr" lastModifiedMillis="1615589724059" xmlns:urn="urn:pingidentity.com:pf:policy:fragment">
+    <urn:policy context="">
+        <urn:AstAction xsi:type="urn:AuthnSourceActionType" xmlns:urn="urn:pingidentity.com:pf:authn-selection" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <urn:AuthnSourceKey type="ADAPTER">IdentifierFirst</urn:AuthnSourceKey>
+            <urn:fallbackToSuccess>true</urn:fallbackToSuccess>
+            <urn:InputIdMapping Type="Inputs" AttributeSourceId="Inputs" Value="subject"/>
+            <urn:userIdAuthenticated>false</urn:userIdAuthenticated>
+        </urn:AstAction>
+        <urn1:AstChild context="Fail" xmlns:urn1="urn:pingidentity.com:pf:authn-selection">
+            <urn:AstAction noOpType="DONE" xsi:type="urn:NoOpActionType" xmlns:urn="urn:pingidentity.com:pf:authn-selection" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+        </urn1:AstChild>
+        <urn1:AstChild context="Success" xmlns:urn1="urn:pingidentity.com:pf:authn-selection">
+            <urn:AstAction xsi:type="urn:AuthnSourceActionType" xmlns:urn="urn:pingidentity.com:pf:authn-selection" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <urn:AuthnSourceKey type="ADAPTER">Risk2DemoAdaptor</urn:AuthnSourceKey>
+                <urn:fallbackToSuccess>false</urn:fallbackToSuccess>
+                <urn:attributeRule>
+                    <urn:IncomingAttr>riskLevel</urn:IncomingAttr>
+                    <urn:Operand>EQUALS_CASE_INSENSITIVE</urn:Operand>
+                    <urn:ExpectedValue>LOW</urn:ExpectedValue>
+                    <urn:Result>Allow</urn:Result>
+                </urn:attributeRule>
+                <urn:attributeRule>
+                    <urn:IncomingAttr>riskLevel</urn:IncomingAttr>
+                    <urn:Operand>EQUALS_CASE_INSENSITIVE</urn:Operand>
+                    <urn:ExpectedValue>MEDIUM</urn:ExpectedValue>
+                    <urn:Result>Challenge</urn:Result>
+                </urn:attributeRule>
+                <urn:attributeRule>
+                    <urn:IncomingAttr>riskLevel</urn:IncomingAttr>
+                    <urn:Operand>EQUALS_CASE_INSENSITIVE</urn:Operand>
+                    <urn:ExpectedValue>HIGH</urn:ExpectedValue>
+                    <urn:Result>Deny</urn:Result>
+                </urn:attributeRule>
+                <urn:userIdAuthenticated>false</urn:userIdAuthenticated>
+            </urn:AstAction>
+            <urn1:AstChild context="Fail">
+                <urn:AstAction noOpType="DONE" xsi:type="urn:NoOpActionType" xmlns:urn="urn:pingidentity.com:pf:authn-selection" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+            </urn1:AstChild>
+            <urn1:AstChild context="Allow">
+                <urn:AstAction noOpType="DONE" xsi:type="urn:NoOpActionType" xmlns:urn="urn:pingidentity.com:pf:authn-selection" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+            </urn1:AstChild>
+            <urn1:AstChild context="Challenge">
+                <urn:AstAction xsi:type="urn:AuthnSourceActionType" xmlns:urn="urn:pingidentity.com:pf:authn-selection" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                    <urn:AuthnSourceKey type="ADAPTER">HTMFormPasswdless</urn:AuthnSourceKey>
+                    <urn:fallbackToSuccess>true</urn:fallbackToSuccess>
+                    <urn:userIdAuthenticated>false</urn:userIdAuthenticated>
+                </urn:AstAction>
+                <urn1:AstChild context="Fail">
+                    <urn:AstAction noOpType="DONE" xsi:type="urn:NoOpActionType" xmlns:urn="urn:pingidentity.com:pf:authn-selection" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                </urn1:AstChild>
+                <urn1:AstChild context="Success">
+                    <urn:AstAction noOpType="DONE" xsi:type="urn:NoOpActionType" xmlns:urn="urn:pingidentity.com:pf:authn-selection" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                </urn1:AstChild>
+            </urn1:AstChild>
+            <urn1:AstChild context="Deny">
+                <urn:AstAction noOpType="DONE" xsi:type="urn:NoOpActionType" xmlns:urn="urn:pingidentity.com:pf:authn-selection" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+            </urn1:AstChild>
+        </urn1:AstChild>
+    </urn:policy>
+</urn:PolicyFragment>
