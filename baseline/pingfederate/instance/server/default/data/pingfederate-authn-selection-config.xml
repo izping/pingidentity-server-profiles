@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urn:AuthnSelectionConfig lastModifiedMillis="1615823646501" enableAuthnSelection="true" enableSpAuthnSelection="true" failIfNoSelection="false" xmlns:urn="urn:pingidentity.com:pf:authn-selection">
+<urn:AuthnSelectionConfig lastModifiedMillis="1617139904225" enableAuthnSelection="true" enableSpAuthnSelection="true" failIfNoSelection="false" xmlns:urn="urn:pingidentity.com:pf:authn-selection">
     <urn:AuthnSelectionTrees>
         <urn:AuthnSelectionTree treeName="Default AuthN Policy" disabled="false" authnApiApp="">
             <urn:AstRoot context="">
@@ -167,7 +167,7 @@
                 </urn:AstChild>
             </urn:AstRoot>
         </urn:AuthnSelectionTree>
-        <urn:AuthnSelectionTree treeName="IdentifierFIrst+Risk+PasswordLess" disabled="true" authnApiApp="">
+        <urn:AuthnSelectionTree treeName="IdentifierFIrst+Risk+PasswordLess" disabled="false" authnApiApp="">
             <urn:AstRoot context="">
                 <urn:AstAction xsi:type="urn:AuthnSourceActionType" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
                     <urn:AuthnSourceKey type="ADAPTER">IdentifierFirst</urn:AuthnSourceKey>
@@ -217,7 +217,19 @@
                             <urn:AstAction noOpType="DONE" xsi:type="urn:NoOpActionType" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
                         </urn:AstChild>
                         <urn:AstChild context="Success">
-                            <urn:AstAction noOpType="DONE" xsi:type="urn:NoOpActionType" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                            <urn:AstAction apcId="K0MRB925mIac85Lr" xsi:type="urn:ApcMappingActionType" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                                <urn:AttributeMapping>
+                                    <urn1:AttributeMap Name="telephoneNumber" Type="Fragment" AttributeSourceId="PingIDMFA" Value="telephoneNumber" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
+                                    <urn1:AttributeMap Name="mail" Type="Adapter" AttributeSourceId="IdentifierFirst" Value="mail" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
+                                    <urn1:AttributeMap Name="subject" Type="Fragment" AttributeSourceId="PingIDMFA" Value="subject" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
+                                    <urn1:AttributeMap Name="givenName" Type="Adapter" AttributeSourceId="IdentifierFirst" Value="givenName" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
+                                    <urn1:AttributeMap Name="objectGUID" Type="Fragment" AttributeSourceId="PingIDMFA" Value="objectGUID" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
+                                    <urn1:AttributeMap Name="memberOf" Type="Fragment" AttributeSourceId="PingIDMFA" Value="memberOf" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
+                                    <urn1:AttributeMap Name="sn" Type="Adapter" AttributeSourceId="IdentifierFirst" Value="sn" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
+                                    <urn1:AttributeMap Name="userPrincipalName" Type="Fragment" AttributeSourceId="PingIDMFA" Value="userPrincipalName" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
+                                    <urn1:TokenAuthorizationIssuanceCriteria xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
+                                </urn:AttributeMapping>
+                            </urn:AstAction>
                         </urn:AstChild>
                     </urn:AstChild>
                     <urn:AstChild context="CHALLANGE">
@@ -254,7 +266,20 @@
                                 <urn:AstAction noOpType="DONE" xsi:type="urn:NoOpActionType" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
                             </urn:AstChild>
                             <urn:AstChild context="Success">
-                                <urn:AstAction noOpType="DONE" xsi:type="urn:NoOpActionType" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                                <urn:AstAction lipId="I7AYFSjpYy7kKD9k" xsi:type="urn:LocalIdentityMappingActionType" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                                    <urn:InboundAttributeMapping/>
+                                    <urn:OutboundAttributeMapping>
+                                        <urn1:AttributeMap Name="telephoneNumber" Type="Fragment" AttributeSourceId="6q1V0xODNUgylOcR" Value="telephoneNumber" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
+                                        <urn1:AttributeMap Name="mail" Type="Adapter" AttributeSourceId="IdentifierFirst" Value="givenName" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
+                                        <urn1:AttributeMap Name="subject" Type="Fragment" AttributeSourceId="6q1V0xODNUgylOcR" Value="subject" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
+                                        <urn1:AttributeMap Name="givenName" Type="Adapter" AttributeSourceId="IdentifierFirst" Value="givenName" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
+                                        <urn1:AttributeMap Name="objectGUID" Type="Fragment" AttributeSourceId="6q1V0xODNUgylOcR" Value="objectGUID" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
+                                        <urn1:AttributeMap Name="memberOf" Type="Fragment" AttributeSourceId="6q1V0xODNUgylOcR" Value="memberOf" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
+                                        <urn1:AttributeMap Name="sn" Type="Adapter" AttributeSourceId="IdentifierFirst" Value="sn" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
+                                        <urn1:AttributeMap Name="userPrincipalName" Type="Fragment" AttributeSourceId="6q1V0xODNUgylOcR" Value="userPrincipalName" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
+                                        <urn1:TokenAuthorizationIssuanceCriteria xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
+                                    </urn:OutboundAttributeMapping>
+                                </urn:AstAction>
                             </urn:AstChild>
                         </urn:AstChild>
                         <urn:AstChild context="SECURITY KEY">
@@ -269,7 +294,20 @@
                                 <urn:AstAction noOpType="DONE" xsi:type="urn:NoOpActionType" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
                             </urn:AstChild>
                             <urn:AstChild context="Success">
-                                <urn:AstAction noOpType="DONE" xsi:type="urn:NoOpActionType" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                                <urn:AstAction lipId="I7AYFSjpYy7kKD9k" xsi:type="urn:LocalIdentityMappingActionType" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                                    <urn:InboundAttributeMapping/>
+                                    <urn:OutboundAttributeMapping>
+                                        <urn1:AttributeMap Name="telephoneNumber" Type="Fragment" AttributeSourceId="SecurityKey" Value="telephoneNumber" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
+                                        <urn1:AttributeMap Name="mail" Type="Adapter" AttributeSourceId="IdentifierFirst" Value="mail" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
+                                        <urn1:AttributeMap Name="subject" Type="Fragment" AttributeSourceId="SecurityKey" Value="subject" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
+                                        <urn1:AttributeMap Name="givenName" Type="Adapter" AttributeSourceId="IdentifierFirst" Value="givenName" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
+                                        <urn1:AttributeMap Name="objectGUID" Type="Fragment" AttributeSourceId="SecurityKey" Value="objectGUID" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
+                                        <urn1:AttributeMap Name="memberOf" Type="Fragment" AttributeSourceId="SecurityKey" Value="memberOf" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
+                                        <urn1:AttributeMap Name="sn" Type="Fragment" AttributeSourceId="SecurityKey" Value="sn" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
+                                        <urn1:AttributeMap Name="userPrincipalName" Type="Fragment" AttributeSourceId="SecurityKey" Value="userPrincipalName" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
+                                        <urn1:TokenAuthorizationIssuanceCriteria xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
+                                    </urn:OutboundAttributeMapping>
+                                </urn:AstAction>
                             </urn:AstChild>
                         </urn:AstChild>
                         <urn:AstChild context="Success">
@@ -282,7 +320,19 @@
                                 <urn:AstAction noOpType="DONE" xsi:type="urn:NoOpActionType" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
                             </urn:AstChild>
                             <urn:AstChild context="Success">
-                                <urn:AstAction noOpType="DONE" xsi:type="urn:NoOpActionType" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                                <urn:AstAction apcId="K0MRB925mIac85Lr" xsi:type="urn:ApcMappingActionType" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                                    <urn:AttributeMapping>
+                                        <urn1:AttributeMap Name="telephoneNumber" Type="Adapter" AttributeSourceId="PingIDAFB" Value="phone" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
+                                        <urn1:AttributeMap Name="mail" Type="Adapter" AttributeSourceId="HTMFormPasswdless" Value="mail" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
+                                        <urn1:AttributeMap Name="subject" Type="Adapter" AttributeSourceId="PingIDAFB" Value="subject" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
+                                        <urn1:AttributeMap Name="givenName" Type="Adapter" AttributeSourceId="HTMFormPasswdless" Value="givenName" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
+                                        <urn1:AttributeMap Name="objectGUID" Type="Adapter" AttributeSourceId="PingIDAFB" Value="objectGUID" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
+                                        <urn1:AttributeMap Name="memberOf" Type="Adapter" AttributeSourceId="HTMFormPasswdless" Value="memberOf" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
+                                        <urn1:AttributeMap Name="sn" Type="Adapter" AttributeSourceId="HTMFormPasswdless" Value="sn" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
+                                        <urn1:AttributeMap Name="userPrincipalName" Type="Adapter" AttributeSourceId="HTMFormPasswdless" Value="userPrincipalName" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
+                                        <urn1:TokenAuthorizationIssuanceCriteria xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
+                                    </urn:AttributeMapping>
+                                </urn:AstAction>
                             </urn:AstChild>
                         </urn:AstChild>
                     </urn:AstChild>
@@ -292,7 +342,7 @@
                 </urn:AstChild>
             </urn:AstRoot>
         </urn:AuthnSelectionTree>
-        <urn:AuthnSelectionTree treeName="IdentifierFirst" disabled="false" authnApiApp="">
+        <urn:AuthnSelectionTree treeName="IdentifierFirst" disabled="true" authnApiApp="">
             <urn:AstRoot context="">
                 <urn:AstAction xsi:type="urn:AuthnSourceActionType" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
                     <urn:AuthnSourceKey type="ADAPTER">IdentifierFirst</urn:AuthnSourceKey>

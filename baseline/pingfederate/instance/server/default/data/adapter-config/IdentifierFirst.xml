@@ -20,11 +20,11 @@
     <urn:UniqueKeyField>subject</urn:UniqueKeyField>
     <urn:AttributeMapping>
         <urn1:AttributeMap Name="mail" Type="No Mapping" Value="NO_MAPPING" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
-        <urn1:AttributeMap Name="subject" Type="LDAP" AttributeSourceId="AFB" Value="Subject DN" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
+        <urn1:AttributeMap Name="subject" Type="LDAP" AttributeSourceId="AFB" Value="sAMAccountName" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
         <urn1:AttributeMap Name="domain" Type="No Mapping" Value="NO_MAPPING" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
-        <urn1:AttributeMap Name="givenName" Type="No Mapping" Value="NO_MAPPING" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
+        <urn1:AttributeMap Name="givenName" Type="LDAP" AttributeSourceId="AFB" Value="givenName" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
         <urn1:AttributeMap Name="sn" Type="No Mapping" Value="NO_MAPPING" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
-        <urn1:AttributeMap Name="userPrincipalName" Type="No Mapping" Value="NO_MAPPING" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
+        <urn1:AttributeMap Name="userPrincipalName" Type="LDAP" AttributeSourceId="AFB" Value="userPrincipalName" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
         <urn1:AttributeSource Id="AFB" Description="AFB Users" Type="LDAP" DataSourceId="LDAP-6E7B49E27FC6F7E7FBEE0DA0CAC6B9E29923192D" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2">
             <urn1:Parameter Name="filter" Value="sAMAccountName=${subject}"/>
             <urn1:Parameter Name="search_base" Value="CN=Users,DC=austinfinebread,DC=com"/>
