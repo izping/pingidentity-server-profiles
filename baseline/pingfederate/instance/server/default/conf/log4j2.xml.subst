@@ -1216,8 +1216,8 @@
         <Logger name="com.pingidentity.crypto.CertificateServiceImpl" level="INFO" />
         <!-- Adjust the priority value to DEBUG to get additional logging to help troubleshoot XML Signature problems -->
         <Logger name="org.sourceid.common.dsig" level="INFO" />
-        <Logger name="org.sourceid.saml20.domain.mgmt.impl.PluginSupport" level="INFO" />
-        <Logger name="com.pingidentity" level="${PF_LOG_LEVEL}" />
+        <Logger name="org.sourceid.saml20.domain.mgmt.impl.PluginSupport" level="DEBUG" />
+        <Logger name="com.pingidentity" level="DEBUG" />
         <Logger name="com.pingidentity.common.util.ErrorHandler" level="INFO" additivity="false">
             <AppenderRef ref="CONSOLE" />
             <AppenderRef ref="FILE" />
