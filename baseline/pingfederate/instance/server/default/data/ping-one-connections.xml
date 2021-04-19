@@ -16,4 +16,19 @@ For PM use only.</description>
         <pingOneManagementApiEndpoint>https://api.pingone.com</pingOneManagementApiEndpoint>
         <region>North America</region>
     </connections>
+    <connections>
+        <active>true</active>
+        <creationDate>2021-04-19T20:00:09.467Z</creationDate>
+        <credentialId>59dde762-fe09-49b4-a795-5156d0786260</credentialId>
+        <description>Internal_ItaiZach_145296802</description>
+        <encryptedCredential>eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2Iiwia2lkIjoiRW1JY1UxOVdueSIsInZlcnNpb24iOiIxMC4yLjAuMTMifQ..Ft_-nmbHyWh6n_OURyvg8w.RNFMzFUqeDEk86D-4n175AwtxlzQklwHcTCKFSvpwSqm1TQVW3SNf6l2vWvG_kTKO7ceoQqjXWqcT9D-LjjsqTdzdQTXZkJx8_0XXJ4UqjjuZo8GDzOPmjnBuf3wtKibfoZ64gnXYmlsd-Lw97T8CAPwIP014kuPCbbllg5N5mRwQfUNl7Z65fHHV3TXlxVIMPUinYPVScALh9sGb_SA1o7IUd4FH8XuYU4yIa1BkXyX_OQzFfEDT8MxCGEleR-aOWg3GWwGCoQekHtB9tSlTAXbe3zVs8O1ldDirzrTVqTCOCMUkaBfJwPR8tu7iVwIBZbQlZ6VWXbZAXW9Fze2_31CNtGdci2TL37gqW41GkOTiy2GgZCnHjUM1oNe4bVzx-q7j5eJM0_TQFIgiK70Q1KAViJMDDz09hpIzrr9ArtaQloANyhsWt_x7xHA9v1n0sjDQu4VdCwbxLy4WwBgBo-VpxStIt-t5cg63zOXoZa1EUwn4e8ZDr10h5uSGxLphQcBYpVe4OxrXHxITHdl9PllfsSVFW2WkEV9aPFTWUGDO4E4aGuXqRtFdgJt2VsoxHimFxzcMasVEX7CwiQuZ-xkgreVl3GefV8BST8GctDPU3LogyzH7IjLFZPRoMLO5wYsfmDg-fPdrCPw09TCX9IaIOPie9wCwDzwaQki0a0UiJ5UO_701vsQZQ5DjNg8bs0q8jJptsV2_mTnnZShizltx4k7UXIFRBZq3bjW9qAtOpYdIu7qsNHo58ggNHzUU-5P2U0jO2erYsUTPh9LZSTy0h2UOaBhSn1BzLzqrkMy0DYjLYwXfB1dmLno_FV9MgxvLpj0aC-TjN5yFOu0AF-U7iVC-kY9Rzb91Pc66Gllmb1FfX_afW8EzKTvOh7T_CmLkuxjwQCCHQDFlyquexVutv2EfhcMgnrKv6vkSw29o9uiTwZSX_jPGYPxcCZltEWqmn9hKNgKGM4D8XZ72tezJ18Rr_UhERDA40j4_U2cfpgiGNkb3rVE6q8S-rdzp6abemrJePF8n1tU4sxEp4IHExMxbeQ87g5rsuX7JdaFbCP4rLjEJCkbGPigJj7P9lXjRmfkIwoKix43ZuZ3RRjkHNwldWSuwDFfLUqcYvH3yLfZ5qFt0zw68uTMz1ncjN5VVRmIRJnTE9L0RuRJ4Y6tRhAj_zZ1iTR3NTrz6fQo7koXWIH8VuT-L339NFQz3yawrnirVkumR05fAqwaQpUDqDfyFdQE86-gLbKPSXlGEeE3uvfAxe25iWV231t3CtrCn_msARf7B8ntQw27WJ3i-mB6s92LkA4psN5n8TMHDvkf7brr5zWmBb6AB9z24km__4HH1fCjfhHjoDI_I4692z3rbNyXnUIYof8ebrRcgs5La7yFuds8VXpzqfqwSYM7AWL_oIf8SmAdMRm_NDfthMeN_DWq9rEF1VGLCyWRFd6Glj1vs5wQEu_NcXja2shMofKJnW15_7SevUG0-n5Ulvjm1FZvPmCMcBZBkrImHVzNseUj7OOdD5iKNqwBYqvU0UFJINe2Geg6R0hZFGvHdXVi6rewoKGyEXv7QXVKpxZGBNQyD96ECISB96BI3zVZHPiTgZK2yrNNSitfMw.B6bx3MTKJu3bH94eX22wsA</encryptedCredential>
+        <environmentId>c8d26e54-e222-4aa3-a04e-252748e3fbdc</environmentId>
+        <id>8AtXqoN8YEYwsh9vvSBUy4</id>
+        <name>PingOneMFA_Internal_145296802</name>
+        <organizationName>internal_itaizach_145296802</organizationName>
+        <pingOneAuthenticationApiEndpoint>https://auth.pingone.com</pingOneAuthenticationApiEndpoint>
+        <pingOneConnectionId>9c661153-7a2d-45e6-be99-a81441792d38</pingOneConnectionId>
+        <pingOneManagementApiEndpoint>https://api.pingone.com</pingOneManagementApiEndpoint>
+        <region>North America</region>
+    </connections>
 </pingOneConnectionsConfig>
