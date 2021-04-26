@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urn:PolicyFragment id="PcL2GvnHPN0gqp1Z" name="AFBCustomer Registration" inputContractId="Zxp6N6W5PH9onACT" outputContractId="Zxp6N6W5PH9onACT" lastModifiedMillis="1619197334864" xmlns:urn="urn:pingidentity.com:pf:policy:fragment">
+    <urn:policy context="">
+        <urn:AstAction xsi:type="urn:AuthnSourceActionType" xmlns:urn="urn:pingidentity.com:pf:authn-selection" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <urn:AuthnSourceKey type="ADAPTER">AFBCustomersLogin</urn:AuthnSourceKey>
+            <urn:fallbackToSuccess>true</urn:fallbackToSuccess>
+            <urn:userIdAuthenticated>false</urn:userIdAuthenticated>
+        </urn:AstAction>
+        <urn1:AstChild context="Fail" xmlns:urn1="urn:pingidentity.com:pf:authn-selection">
+            <urn:AstAction noOpType="DONE" xsi:type="urn:NoOpActionType" xmlns:urn="urn:pingidentity.com:pf:authn-selection" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+        </urn1:AstChild>
+        <urn1:AstChild context="Success" xmlns:urn1="urn:pingidentity.com:pf:authn-selection">
+            <urn:AstAction lipId="0157BIwwQ15FastX" xsi:type="urn:LocalIdentityMappingActionType" xmlns:urn="urn:pingidentity.com:pf:authn-selection" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <urn:InboundAttributeMapping>
+                    <urn2:AttributeMap Name="UID" Type="Inputs" AttributeSourceId="inputs" Value="subject" xmlns:urn2="urn:sourceid.org:saml2:metadata-extension:v2"/>
+                    <urn2:AttributeMap Name="mail" Type="Inputs" AttributeSourceId="inputs" Value="mail" xmlns:urn2="urn:sourceid.org:saml2:metadata-extension:v2"/>
+                    <urn2:AttributeMap Name="pf.local.identity.unique.id" Type="Inputs" AttributeSourceId="inputs" Value="subject" xmlns:urn2="urn:sourceid.org:saml2:metadata-extension:v2"/>
+                    <urn2:TokenAuthorizationIssuanceCriteria xmlns:urn2="urn:sourceid.org:saml2:metadata-extension:v2"/>
+                </urn:InboundAttributeMapping>
+                <urn:OutboundAttributeMapping>
+                    <urn2:AttributeMap Name="mail" Type="Inputs" AttributeSourceId="inputs" Value="mail" xmlns:urn2="urn:sourceid.org:saml2:metadata-extension:v2"/>
+                    <urn2:AttributeMap Name="subject" Type="Inputs" AttributeSourceId="inputs" Value="subject" xmlns:urn2="urn:sourceid.org:saml2:metadata-extension:v2"/>
+                    <urn2:TokenAuthorizationIssuanceCriteria xmlns:urn2="urn:sourceid.org:saml2:metadata-extension:v2"/>
+                </urn:OutboundAttributeMapping>
+            </urn:AstAction>
+        </urn1:AstChild>
+    </urn:policy>
+</urn:PolicyFragment>

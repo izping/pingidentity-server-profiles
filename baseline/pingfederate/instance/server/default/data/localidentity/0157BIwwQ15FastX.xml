@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<loc:localIdentity profileId="0157BIwwQ15FastX" profileName="AFBCustomersPD" contractId="RXxyDeavT3fbN3xi" profileEnabled="true" registrationEnabled="true" xmlns:loc="http://pingidentity.com/2017/07/localIdentity">
+    <loc:auth-sources/>
+    <loc:fields stripSpaceFromUniqueField="true" maskOgnlValues="false">
+        <loc:field type="TEXT" default-value="" id="UID" label="User Name">
+            <loc:appliesTo profile="false" registration="true"/>
+            <loc:parameter param-name="Read-Only" value="false"/>
+            <loc:parameter param-name="Required" value="true"/>
+            <loc:parameter param-name="Unique ID Field" value="true"/>
+            <loc:parameter param-name="Mask Log Values" value="false"/>
+        </loc:field>
+        <loc:field type="TEXT" default-value="" id="fname" label="First Name">
+            <loc:appliesTo profile="false" registration="true"/>
+            <loc:parameter param-name="Read-Only" value="false"/>
+            <loc:parameter param-name="Required" value="true"/>
+            <loc:parameter param-name="Unique ID Field" value="false"/>
+            <loc:parameter param-name="Mask Log Values" value="false"/>
+        </loc:field>
+        <loc:field type="TEXT" default-value="" id="sn" label="Last Name">
+            <loc:appliesTo profile="false" registration="true"/>
+            <loc:parameter param-name="Read-Only" value="false"/>
+            <loc:parameter param-name="Required" value="true"/>
+            <loc:parameter param-name="Unique ID Field" value="false"/>
+            <loc:parameter param-name="Mask Log Values" value="false"/>
+        </loc:field>
+        <loc:field type="PHONE" default-value="" id="TelephoneNumber" label="Phone Number">
+            <loc:appliesTo profile="false" registration="true"/>
+            <loc:parameter param-name="Read-Only" value="false"/>
+            <loc:parameter param-name="Required" value="true"/>
+            <loc:parameter param-name="Unique ID Field" value="false"/>
+            <loc:parameter param-name="Mask Log Values" value="true"/>
+        </loc:field>
+        <loc:field type="EMAIL" default-value="" id="mail" label="Email">
+            <loc:appliesTo profile="false" registration="true"/>
+            <loc:parameter param-name="Read-Only" value="false"/>
+            <loc:parameter param-name="Required" value="true"/>
+            <loc:parameter param-name="Unique ID Field" value="false"/>
+            <loc:parameter param-name="Mask Log Values" value="false"/>
+        </loc:field>
+    </loc:fields>
+    <loc:email-verification-config emailVerificationEnabled="false" verifyEmailTemplateName="message-template-email-ownership-verification.html" emailVerificationSentTemplateName="local.identity.email.verification.sent.html" emailVerificationSuccessTemplateName="local.identity.email.verification.success.html" emailVerificationErrorTemplateName="local.identity.email.verification.error.html" otlTimeToLive="1440" verificationEmailField="" verificationStatusField="" notificationPublisherId=""/>
+    <loc:registration-config captchaEnabled="false" templateName="local.identity.registration.html" thisIsMyDevice="false" createAuthnSessionAfterRegistration="false"/>
+    <loc:profile-config templateName="local.identity.profile.html" deleteIdentityEnabled="true"/>
+    <loc:datastore-mapping>
+        <loc:DataSource Description="" Type="LDAP" DataSourceId="LDAP-BC988F51D8C35F0693AEBFB36281B9355C13F1AF">
+            <urn:Parameter Name="create_pattern" Value="uid=${UID}" xmlns:urn="urn:sourceid.org:saml2:metadata-extension:v2"/>
+            <urn:Parameter Name="auxiliary_object_classes" Value="pf-connected-identities" xmlns:urn="urn:sourceid.org:saml2:metadata-extension:v2"/>
+            <urn:Parameter Name="search_base" Value="ou=AFBCustomers,dc=example,dc=com" xmlns:urn="urn:sourceid.org:saml2:metadata-extension:v2"/>
+            <urn:Parameter Name="search_scope" Value="ONELEVEL_SCOPE" xmlns:urn="urn:sourceid.org:saml2:metadata-extension:v2"/>
+            <urn:Parameter Name="object_class" Value="inetOrgPerson" xmlns:urn="urn:sourceid.org:saml2:metadata-extension:v2"/>
+        </loc:DataSource>
+        <loc:Attribute fieldName="UID" datastore-field="uid"/>
+        <loc:Attribute fieldName="fname" datastore-field="cn"/>
+        <loc:Attribute fieldName="sn" datastore-field="sn"/>
+        <loc:Attribute fieldName="TelephoneNumber" datastore-field="telephoneNumber"/>
+        <loc:Attribute fieldName="mail" datastore-field="mail"/>
+    </loc:datastore-mapping>
+</loc:localIdentity>

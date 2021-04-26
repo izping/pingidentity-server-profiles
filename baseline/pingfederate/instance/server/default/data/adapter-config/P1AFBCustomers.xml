@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urn:AdapterConfiguration authnCtxClassRef="" isInheritAttributeSettings="false" isInheritAttributeMapping="false" maskOgnlValues="false" uniqueUserKeyField="username" isInheritExtendedContractAttributes="false" name="AFBCustomersMFA" xmlns:urn="urn:sourceid.org:saml2:adapter:conf">
+    <urn:Fields>
+        <urn:Field name="PingOne Environment">8AtXqoN8YEYwsh9vvSBUy4|c8d26e54-e222-4aa3-a04e-252748e3fbdc</urn:Field>
+        <urn:Field name="PingOne Population">b2033d29-111e-4b0e-9717-30485495ceee</urn:Field>
+        <urn:Field name="Application">27d89866-9689-40e3-9ad7-7b2766e3cdea</urn:Field>
+        <urn:Field name="Environment ID"/>
+        <urn:Field name="Region"/>
+        <urn:Field name="Population ID"/>
+        <urn:Field name="Application Client ID"/>
+        <urn:Field name="PingFederate Connection Client ID"/>
+        <urn:Field name="PingFederate Connection Client Secret"/>
+        <urn:Field name="Application Client Secret">eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2Iiwia2lkIjoiRW1JY1UxOVdueSIsInZlcnNpb24iOiIxMC4yLjAuMTMifQ..YRBOfv6DNEc-WV2pxxQtiw.WmMv-FT16NbMx-X_KeG64DW0hrm4Oy-nfPQYCVBVd1pSlPtyy-IF2sxmeNSQ4NeS5KxQL5_8YbrDdolVPkmVOHfs3FuliA-g_-SHS0OeHMo.LdHlpGaMo2bOB19D8Nyn9Q</urn:Field>
+        <urn:Field name="PingOne Authentication Policy">Multi_Factor</urn:Field>
+        <urn:Field name="Test Username">User1</urn:Field>
+        <urn:Field name="HTML Template Prefix">pingone-mfa</urn:Field>
+        <urn:Field name="Messages Files">pingone-mfa-messages</urn:Field>
+        <urn:Field name="Provision Users and Authentication Methods">true</urn:Field>
+        <urn:Field name="Update Authentication Methods">true</urn:Field>
+        <urn:Field name="Username Attribute">username</urn:Field>
+        <urn:Field name="SMS Attribute">sms</urn:Field>
+        <urn:Field name="Email Attribute">email</urn:Field>
+        <urn:Field name="DEFAULT AUTHENTICATION METHOD FOR PROVISIONED USERS">SMS</urn:Field>
+        <urn:Field name="User Not Found Failure Mode">Block user</urn:Field>
+        <urn:Field name="Service Unavailable Failure Mode">Bypass authentication</urn:Field>
+        <urn:Field name="Change Device">Allow</urn:Field>
+        <urn:Field name="Show Success Screens">true</urn:Field>
+        <urn:Field name="Show Error Screens">true</urn:Field>
+        <urn:Field name="Show Timeout Screens">true</urn:Field>
+        <urn:Field name="API Request Timeout">5000</urn:Field>
+        <urn:Field name="Proxy Settings">System Defaults</urn:Field>
+        <urn:Field name="Custom Proxy Host"/>
+        <urn:Field name="Custom Proxy Port"/>
+    </urn:Fields>
+    <urn:AdvancedFields>
+        <urn:Field name="Test Username">User1</urn:Field>
+        <urn:Field name="HTML Template Prefix">pingone-mfa</urn:Field>
+        <urn:Field name="Messages Files">pingone-mfa-messages</urn:Field>
+        <urn:Field name="Provision Users and Authentication Methods">true</urn:Field>
+        <urn:Field name="Update Authentication Methods">true</urn:Field>
+        <urn:Field name="Username Attribute">username</urn:Field>
+        <urn:Field name="SMS Attribute">sms</urn:Field>
+        <urn:Field name="Email Attribute">email</urn:Field>
+        <urn:Field name="DEFAULT AUTHENTICATION METHOD FOR PROVISIONED USERS">SMS</urn:Field>
+        <urn:Field name="User Not Found Failure Mode">Block user</urn:Field>
+        <urn:Field name="Service Unavailable Failure Mode">Bypass authentication</urn:Field>
+        <urn:Field name="Change Device">Allow</urn:Field>
+        <urn:Field name="Show Success Screens">true</urn:Field>
+        <urn:Field name="Show Error Screens">true</urn:Field>
+        <urn:Field name="Show Timeout Screens">true</urn:Field>
+        <urn:Field name="API Request Timeout">5000</urn:Field>
+        <urn:Field name="Proxy Settings">System Defaults</urn:Field>
+        <urn:Field name="Custom Proxy Host"/>
+        <urn:Field name="Custom Proxy Port"/>
+    </urn:AdvancedFields>
+    <urn:Tables/>
+    <urn:ExtendedContractAttributes>
+        <urn:AttributeName>telephoneNumber</urn:AttributeName>
+        <urn:AttributeName>email</urn:AttributeName>
+    </urn:ExtendedContractAttributes>
+    <urn:UniqueKeyField>username</urn:UniqueKeyField>
+    <urn:AttributeMapping>
+        <urn1:AttributeMap Name="access_token" Type="Adapter" Value="access_token" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
+        <urn1:AttributeMap Name="pingone.mfa.status" Type="Adapter" Value="pingone.mfa.status" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
+        <urn1:AttributeMap Name="telephoneNumber" Type="Adapter" Value="telephoneNumber" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
+        <urn1:AttributeMap Name="id_token" Type="Adapter" Value="id_token" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
+        <urn1:AttributeMap Name="pingone.mfa.status.reason" Type="Adapter" Value="pingone.mfa.status.reason" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
+        <urn1:AttributeMap Name="email" Type="Adapter" Value="email" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
+        <urn1:AttributeMap Name="username" Type="Adapter" Value="username" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
+        <urn1:AttributeSource Id="AFBCustAuth" Description="AFB Customer Authentication" Type="LDAP" DataSourceId="LDAP-6E7B49E27FC6F7E7FBEE0DA0CAC6B9E29923192D" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2">
+            <urn1:Parameter Name="filter" Value="uid=${username}"/>
+            <urn1:Parameter Name="search_base" Value="ou=AFBCustomers,dc=example,dc=com"/>
+            <urn1:Parameter Name="search_scope" Value="SUBTREE_SCOPE"/>
+            <urn1:Parameter Name="memberof_nested_group" Value="false"/>
+        </urn1:AttributeSource>
+        <urn1:TokenAuthorizationIssuanceCriteria xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
+    </urn:AttributeMapping>
+</urn:AdapterConfiguration>
