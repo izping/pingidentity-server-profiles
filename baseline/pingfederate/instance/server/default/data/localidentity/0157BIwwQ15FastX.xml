@@ -39,7 +39,7 @@
         </loc:field>
     </loc:fields>
     <loc:email-verification-config emailVerificationEnabled="false" verifyEmailTemplateName="message-template-email-ownership-verification.html" emailVerificationSentTemplateName="local.identity.email.verification.sent.html" emailVerificationSuccessTemplateName="local.identity.email.verification.success.html" emailVerificationErrorTemplateName="local.identity.email.verification.error.html" otlTimeToLive="1440" verificationEmailField="" verificationStatusField="" notificationPublisherId=""/>
-    <loc:registration-config captchaEnabled="false" templateName="local.identity.registration.html" thisIsMyDevice="false" createAuthnSessionAfterRegistration="false"/>
+    <loc:registration-config captchaEnabled="false" templateName="local.identity.registration.html" thisIsMyDevice="false" createAuthnSessionAfterRegistration="false" registrationWorkflow="PcL2GvnHPN0gqp1Z" executeWorkflowSetting="AFTER_ACCOUNT_CREATION"/>
     <loc:profile-config templateName="local.identity.profile.html" deleteIdentityEnabled="true"/>
     <loc:datastore-mapping>
         <loc:DataSource Description="" Type="LDAP" DataSourceId="LDAP-BC988F51D8C35F0693AEBFB36281B9355C13F1AF">

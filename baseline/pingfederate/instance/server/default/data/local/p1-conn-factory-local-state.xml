@@ -3,5 +3,5 @@
     <con:item name="SigningKeyPairAlias">bm7bcream3dypqhsa00rlzcug</con:item>
     <con:item name="MetadataUploadPending">false</con:item>
     <con:item name="ProvisioningUsername">prov-zY0CtvXwgs</con:item>
-    <con:item name="EncryptedProvisioningPassword">OBF:JWE:eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2Iiwia2lkIjoiRW1JY1UxOVdueSIsInZlcnNpb24iOiIxMC4yLjAuMTMifQ..UBPKqJ4umdRSCVoiCzf1JQ.TmEaMbWkwjTTXFBI6pAyGsH4lXw41pI0-QFn6vEKdXU.kTywQXGbTYPF44ERKhEqZQ</con:item>
+    <con:item name="EncryptedProvisioningPassword">OBF:JWE:eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2Iiwia2lkIjoiRW1JY1UxOVdueSIsInZlcnNpb24iOiIxMC4yLjAuMTMifQ..LXzKO1Jcey6ZF-7XiHmomw.2HX-aa3qcqTC1u9vw76YzXjNzGDevfgpeXda6kYeRxQ.abzHMMrUDkfebCom7xs5aQ</con:item>
 </con:config>

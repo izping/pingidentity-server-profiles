@@ -10,7 +10,7 @@
         <urn:Field name="Application Client ID"/>
         <urn:Field name="PingFederate Connection Client ID"/>
         <urn:Field name="PingFederate Connection Client Secret"/>
-        <urn:Field name="Application Client Secret">eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2Iiwia2lkIjoiRW1JY1UxOVdueSIsInZlcnNpb24iOiIxMC4yLjAuMTMifQ..YRBOfv6DNEc-WV2pxxQtiw.WmMv-FT16NbMx-X_KeG64DW0hrm4Oy-nfPQYCVBVd1pSlPtyy-IF2sxmeNSQ4NeS5KxQL5_8YbrDdolVPkmVOHfs3FuliA-g_-SHS0OeHMo.LdHlpGaMo2bOB19D8Nyn9Q</urn:Field>
+        <urn:Field name="Application Client Secret">eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2Iiwia2lkIjoiRW1JY1UxOVdueSIsInZlcnNpb24iOiIxMC4yLjAuMTMifQ..w3WihC2aBN1zqHFnRDIsRw.ajo9TUiTJOB5lNPrUP_5vgoBQ3e5x_l9vWhjb7UNjo0qC8qP37Z_BVTWapmzihNpjjA7eEI9-5fhlSnsmNE8X0WuAFhG2jp01oQWK3pNCuw.zqE0oWouBeerLZK5-oUBZg</urn:Field>
         <urn:Field name="PingOne Authentication Policy">Multi_Factor</urn:Field>
         <urn:Field name="Test Username">User1</urn:Field>
         <urn:Field name="HTML Template Prefix">pingone-mfa</urn:Field>
@@ -18,8 +18,8 @@
         <urn:Field name="Provision Users and Authentication Methods">true</urn:Field>
         <urn:Field name="Update Authentication Methods">true</urn:Field>
         <urn:Field name="Username Attribute">username</urn:Field>
-        <urn:Field name="SMS Attribute">sms</urn:Field>
-        <urn:Field name="Email Attribute">email</urn:Field>
+        <urn:Field name="SMS Attribute">TelephoneNumber</urn:Field>
+        <urn:Field name="Email Attribute">mail</urn:Field>
         <urn:Field name="DEFAULT AUTHENTICATION METHOD FOR PROVISIONED USERS">SMS</urn:Field>
         <urn:Field name="User Not Found Failure Mode">Block user</urn:Field>
         <urn:Field name="Service Unavailable Failure Mode">Bypass authentication</urn:Field>
@@ -39,8 +39,8 @@
         <urn:Field name="Provision Users and Authentication Methods">true</urn:Field>
         <urn:Field name="Update Authentication Methods">true</urn:Field>
         <urn:Field name="Username Attribute">username</urn:Field>
-        <urn:Field name="SMS Attribute">sms</urn:Field>
-        <urn:Field name="Email Attribute">email</urn:Field>
+        <urn:Field name="SMS Attribute">TelephoneNumber</urn:Field>
+        <urn:Field name="Email Attribute">mail</urn:Field>
         <urn:Field name="DEFAULT AUTHENTICATION METHOD FOR PROVISIONED USERS">SMS</urn:Field>
         <urn:Field name="User Not Found Failure Mode">Block user</urn:Field>
         <urn:Field name="Service Unavailable Failure Mode">Bypass authentication</urn:Field>
@@ -62,10 +62,10 @@
     <urn:AttributeMapping>
         <urn1:AttributeMap Name="access_token" Type="Adapter" Value="access_token" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
         <urn1:AttributeMap Name="pingone.mfa.status" Type="Adapter" Value="pingone.mfa.status" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
-        <urn1:AttributeMap Name="telephoneNumber" Type="Adapter" Value="telephoneNumber" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
+        <urn1:AttributeMap Name="telephoneNumber" Type="LDAP" AttributeSourceId="AFBCustAuth" Value="telephoneNumber" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
         <urn1:AttributeMap Name="id_token" Type="Adapter" Value="id_token" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
         <urn1:AttributeMap Name="pingone.mfa.status.reason" Type="Adapter" Value="pingone.mfa.status.reason" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
-        <urn1:AttributeMap Name="email" Type="Adapter" Value="email" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
+        <urn1:AttributeMap Name="email" Type="LDAP" AttributeSourceId="AFBCustAuth" Value="mail" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
         <urn1:AttributeMap Name="username" Type="Adapter" Value="username" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
         <urn1:AttributeSource Id="AFBCustAuth" Description="AFB Customer Authentication" Type="LDAP" DataSourceId="LDAP-6E7B49E27FC6F7E7FBEE0DA0CAC6B9E29923192D" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2">
             <urn1:Parameter Name="filter" Value="uid=${username}"/>

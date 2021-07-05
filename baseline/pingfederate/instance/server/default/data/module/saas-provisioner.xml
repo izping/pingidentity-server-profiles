@@ -6,9 +6,9 @@
       <parameter name="groupsUrl" value="https://scim.connect.pingidentity.com/prov-service/v1/Groups"/>
       <parameter name="authentication" value="basic"/>
       <parameter name="basicAuthUser" value="prov-zY0CtvXwgs"/>
-      <parameter name="basicAuthPass" value="OBF:JWE:eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2Iiwia2lkIjoiRW1JY1UxOVdueSIsInZlcnNpb24iOiIxMC4yLjAuMTMifQ..fSu_seodpENNZ3KDUhL4ow.yt_f4gU2lXTjYdqR9cOaMm1Xbalza5YTyH3B4ny8AIA.0L-tJXfusIfE_xrAturpPQ"/>
+      <parameter name="basicAuthPass" value="OBF:JWE:eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2Iiwia2lkIjoiRW1JY1UxOVdueSIsInZlcnNpb24iOiIxMC4yLjAuMTMifQ..CguuP6Uv4x_gvF4ijqDbPA.1-Uv7r8HZWC7yAOMoAb_jwyITKb8Hik1WCn2mjj35hU.UHm61aGvi3NniY2RD4vJdA"/>
       <parameter name="clientId" value=""/>
-      <parameter name="clientSecret" value="OBF:JWE:eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2Iiwia2lkIjoiRW1JY1UxOVdueSIsInZlcnNpb24iOiIxMC4yLjAuMTMifQ..cNvTc2-wMetsuZYU9a2qFQ.vOKzdMPQGTTxbYH7I48qGQ.980VsYQCIGuIg-l4Kf_cqA"/>
+      <parameter name="clientSecret" value="OBF:JWE:eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2Iiwia2lkIjoiRW1JY1UxOVdueSIsInZlcnNpb24iOiIxMC4yLjAuMTMifQ..ojdVHWidxY9XM46UOQNkAg.H6RmIrIdleoJ_5Gy1lGPmw.UgT-B3F9w4vBgCdD3zLUQQ"/>
       <parameter name="tokenEndpoint" value=""/>
       <parameter name="isPatchSupported" value="true"/>
       <parameter name="useDnAsGroupName" value="true"/>
